@@ -113,12 +113,11 @@ body {
 }
 
 #logo {
-  height: 50px;
-  margin: 50px auto;
+  height: 3.1rem;
+  margin: 3.2rem auto;
 }
 
 .yellow-text-italic {
-  font-family: "Satisfy", cursive;
   font-weight: 100;
   font-size: 2rem;
   font-style: normal;
@@ -128,13 +127,11 @@ body {
 
 .slogan {
   font-size: 5.5rem;
-  font-family: "Roboto Condensed", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
   color: white;
   margin: 0;
-  line-height: 90px;
+  line-height: 5.6rem;
 }
 
 .content {
@@ -147,53 +144,191 @@ body {
 
 .btn {
   background-color: #fdc913;
-  margin: 20px auto;
+  margin: 1.2rem auto;
   padding: 1rem 4rem;
-  font-family: "Barlow", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   border-radius: 4rem;
   font-size: 1.2rem;
   border: none;
 }
 
-.btn:hover{
+.btn:hover {
   cursor: pointer;
 }
 
 .categories {
-  height: 15vh;
+  height: 9vh;
   background-color: white;
   display: flex;
   justify-content: center;
-  border: red solid 2px;
   align-items: center;
 }
 
 .categories img {
- height: 60%;
+  height: 60%;
 }
 
 .categories a {
   text-decoration: none;
   text-align: end;
   align-self: center;
-  margin: 0 0 0 30px;
- font-family: "Roboto Condensed", sans-serif;
-  font-optical-sizing: auto;
+  margin: 0 0 0 1.2rem;
+
   font-weight: 500;
   color: black;
   font-size: 1.2rem;
 }
 
-.category{
+.category {
   display: flex;
-  margin : 0 30px;
+  margin: 0 2rem;
 }
 
-.ads{
+.ads-section {
   background-color: #faf7f2;
   height: 100vh;
-  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
+
+.ads-wrapper {
+  display: flex;
+  margin: 5rem 0 1rem 0;
+  gap: 1.2rem;
+  width: 60%;
+}
+
+.offers {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.card {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.pos {
+  position: relative;
+}
+
+#special-ad h1 {
+  font-size: 4rem;
+  position: absolute;
+  top:0;
+  left:2rem;
+  color: white;
+  text-align: left;
+}
+#special-ad span{
+  text-align: left;
+  position: absolute;
+  top :14rem;
+  left: 2rem;
+  color:white;
+  font-size: 1.5em ;
+  font-weight: 400;
+}
+
+.qua{
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.barlow{
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+}
+
+.satisfy{
+  font-family: "Satisfy", cursive;
+}
+
+.roboto{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.order{
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  color: #CE2829;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.offers h2{
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  line-height: 2.3rem;
+  font-size: 1.6rem;
+  text-align: left;
+}
+.full{
+  position: absolute;
+  top:17rem;
+  left: 2rem;
+}
+.half{
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.select h2{
+  color : #ce2829;
+  text-transform: lowercase;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.select h1{
+  font-size: 3rem;
+  font-weight: 700;
+  color :#292929;
+}
+
+.radio-button-select{
+  display: flex;
+}
+
+.select-casing{
+  background-color: white;
+  margin: 0 20px;
+  border-radius: 40px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.soft-button{
+padding-left: 10px;
+text-decoration: none;
+color: black;
+font-weight: 500;
+}
+
+
+
+.radio-button-select .select-casing:nth-child(2) {
+  background-color: #292929;
+}
+
+.radio-button-select .select-casing:nth-child(2) .soft-button {
+  color: white;
+}
+
+
+
+
+/* Sarı #FDC913
+Açık Gri: #5F5F5F
+Koyu Gri #292929
+Kırmızı #CE2829
+Bej: #FAF7F2 */
