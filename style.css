@@ -151,10 +151,12 @@ body {
   border-radius: 4rem;
   font-size: 1.2rem;
   border: none;
+  transition: transform .1s;
 }
 
 .btn:hover {
   cursor: pointer;
+  transform : scale(1.05);
 }
 
 .categories {
@@ -183,11 +185,17 @@ body {
 .category {
   display: flex;
   margin: 0 2rem;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.category:hover{
+  background-color: #ffe3e3
 }
 
 .ads-section {
   background-color: #faf7f2;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -219,50 +227,59 @@ body {
 #special-ad h1 {
   font-size: 4rem;
   position: absolute;
-  top:0;
-  left:2rem;
+  top: 0;
+  left: 2rem;
   color: white;
   text-align: left;
 }
-#special-ad span{
+
+#special-ad span {
   text-align: left;
   position: absolute;
-  top :14rem;
+  top: 14rem;
   left: 2rem;
-  color:white;
-  font-size: 1.5em ;
+  color: white;
+  font-size: 1.5em;
   font-weight: 400;
 }
 
-.qua{
+.qua {
   font-family: "Quattrocento", serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.barlow{
+.barlow {
   font-family: "Barlow", sans-serif;
   font-style: normal;
 }
 
-.satisfy{
+.satisfy {
   font-family: "Satisfy", cursive;
 }
 
-.roboto{
+.roboto {
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
 }
 
-.order{
+.order {
   padding: 1rem 2rem;
   border: none;
   border-radius: 2rem;
   color: #CE2829;
   font-weight: 800;
   text-transform: uppercase;
+  transition: color .2s ,background-color .2s ;
 }
-.offers h2{
+
+
+.order:hover{
+  background-color: #CE2829;
+  color: white;
+}
+
+.offers h2 {
   position: absolute;
   top: 1rem;
   left: 2rem;
@@ -270,35 +287,37 @@ body {
   font-size: 1.6rem;
   text-align: left;
 }
-.full{
+
+.full {
   position: absolute;
-  top:17rem;
+  top: 17rem;
   left: 2rem;
 }
-.half{
+
+.half {
   position: absolute;
   bottom: 2rem;
   left: 2rem;
 }
 
-.select h2{
-  color : #ce2829;
+.select h2 {
+  color: #ce2829;
   text-transform: lowercase;
   font-size: 2rem;
   font-weight: 100;
 }
 
-.select h1{
+.select h1 {
   font-size: 3rem;
   font-weight: 700;
-  color :#292929;
+  color: #292929;
 }
 
-.radio-button-select{
+.radio-button-select {
   display: flex;
 }
 
-.select-casing{
+.select-casing {
   background-color: white;
   margin: 0 20px;
   border-radius: 40px;
@@ -307,11 +326,11 @@ body {
   align-items: center;
 }
 
-.soft-button{
-padding-left: 10px;
-text-decoration: none;
-color: black;
-font-weight: 500;
+.soft-button {
+  padding-left: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
 
 
@@ -324,11 +343,173 @@ font-weight: 500;
   color: white;
 }
 
+.products {
+  margin-top: 3rem;
+  text-align: left;
+  display: flex;
+  gap: 2rem;
+}
+
+.products img {
+  width: 80%;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  margin-bottom: 4rem;
+  transition: transform .2s;
+  border-radius: 10px;
+}
+
+.product-img {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+}
+
+.product-detail {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.products h3 {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  letter-spacing: .1rem;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.product-card p span:nth-child(-n+2) {
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+}
+
+.product-card p span:nth-child(2) {
+  margin-left: 20%;
+}
+
+.product-card p span:nth-child(3) {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.product-card:hover {
+  transform: translateY(-20px) scale(1.1);
+
+}
+
+.footer-content {
+  padding: 3rem 0;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+}
 
 
+
+.hot-menu {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  width: 20%;
+}
+
+.insta-menu {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  width: 20%;
+}
+
+.address {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  width: 20%;
+}
+
+.address span {
+  padding: 20px;
+}
+.address p {
+  padding: 0;
+  margin: 0;
+}
+.address-info{
+  margin : 20px 0;
+}
+
+.hot-menu h4 {
+  margin: .4rem;
+}
+
+#footer-img {
+  width: 50%;
+  padding-bottom: 3rem;
+}
+
+#address-content img {
+  width: 3%;
+}
+
+.insta-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#address-content p,
+#address-content span,
+.hot-menu h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.footer-content h3{
+  font-weight: 300;
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-size : 1.5rem;
+}
+.gap{
+  height: 1px;
+  background-color:#5F5F5F ;
+}
+
+.footer-end-data{
+  background-color: #1a1a1a;
+  color: white ;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
 
 /* Sarı #FDC913
 Açık Gri: #5F5F5F
 Koyu Gri #292929
 Kırmızı #CE2829
 Bej: #FAF7F2 */
+
+/* 
+.qua
+.barlow
+.satisfy
+.roboto */
